@@ -1,2 +1,2 @@
 # Project-good-hands
-Projekt "Oddam w dobre ręce"
+This project has been made for the needs of the course.
