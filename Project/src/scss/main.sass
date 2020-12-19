@@ -86,18 +86,53 @@ nav
   .about-us-img
     width: 50%
     height: 900px
+    background-size: cover
     background-image: url("../assets/People.jpg")
 .home-foundations
   display: flex
   flex-direction: column
   align-items: center
-  .foundations-list
-    display: flex
-    border-bottom: solid
-.home-contact-us
-  display: flex
-  .contact-us-content
+  .home-foundations-data
+    max-width: 600px
+    text-align: center
+  .home-foundations-buttons
+    align-self: center
+  .home-foundations-list
     display: flex
     flex-direction: column
-    .contact-from
+    width: 70%
+    .home-foundations-item
       display: flex
+      justify-content: space-between
+      border-bottom: solid
+      &.home-foundations-item:nth-child(3)
+        border-bottom: transparent
+        margin-bottom: 20px
+.home-contact-us
+  display: flex
+  height: 1000px
+  justify-content: flex-end
+  position: relative
+  text-align: center
+  .home-contact-us-img
+    width: 100%
+    position: absolute
+    top: 0%
+    bottom: 0
+    z-index: -1
+    background-size: cover
+    background-repeat: no-repeat
+    opacity: 0.2
+    background-image: url("../assets/Background-Contact-Form.jpg")
+  .contact-us-content
+    width: 40%
+    margin-right: 10%
+    .contact-form
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      .contact-form-data
+        display: flex
+        justify-content: space-between
+        text-align: start
+

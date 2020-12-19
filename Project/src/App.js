@@ -81,21 +81,19 @@ function App() {
                   <h1 className="about-us-title">O Nas</h1>
                   <p className="about-us-data">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
               </div>
-              <div className='about-us-img'>
-                  Obrazek
-              </div>
+              <div className='about-us-img'/>
           </section>
           <section className="home-foundations">
-              <h1>Komu pomagamy?</h1>
+              <h1 className="home-foundations-title">Komu pomagamy?</h1>
               <div>
                   <button>Fundacjom</button>
                   <button>Organizacjom pozarządowym</button>
                   <button>Lokalnym zbiórkom</button>
               </div>
-              <h2>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</h2>
-              <div>
+              <h2 className="home-foundations-data">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</h2>
+              <div className="home-foundations-list">
                   <ul>
-                      <li className="foundations-list">
+                      <li className="home-foundations-item">
                           <div>
                               <h3>Fundacja “Dbam o Zdrowie”</h3>
                               <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
@@ -104,7 +102,7 @@ function App() {
                               <p>ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
                           </div>
                       </li>
-                      <li className="foundations-list">
+                      <li className="home-foundations-item">
                           <div>
                               <h3>Fundacja “Dla dzieci”</h3>
                               <p>Fundacja “Dla dzieci”</p>
@@ -113,7 +111,7 @@ function App() {
                               <p>ubrania, meble, zabawki</p>
                           </div>
                       </li>
-                      <li className="foundations-list">
+                      <li className="home-foundations-item">
                           <div>
                               <h3>Fundacja “Bez domu”</h3>
                               <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
@@ -123,22 +121,31 @@ function App() {
                           </div>
                       </li>
                   </ul>
-                  <button>1</button>
-                  <button>2</button>
-                  <button>3</button>
+                  <div className="home-foundations-buttons">
+                      <button>1</button>
+                      <button>2</button>
+                      <button>3</button>
+                  </div>
               </div>
           </section>
           <section className="home-contact-us">
-              <div>Obrazek</div>
+              <div className="home-contact-us-img"/>
               <div className="contact-us-content">
                   <h1>Skontaktuj się z nami</h1>
-                  <form className="contact-from">
-                      <h4>Wpisz swoje imię</h4>
-                      <input type="text" placeholder="Krzysztof"/>
-                      <h4>Wpisz swój email</h4>
-                      <input type="email" placeholder="abc@xyz.pl"/>
+                  <form className="contact-form">
+                      <div className="contact-form-data">
+                          <div>
+                              <h4>Wpisz swoje imię</h4>
+                              <input type="text" placeholder="Krzysztof"/>
+                          </div>
+
+                          <div>
+                            <h4>Wpisz swój email</h4>
+                            <input type="email" placeholder="abc@xyz.pl"/>
+                          </div>
+                      </div>
                       <h4>Wpisz swoją wiadomość</h4>
-                      <input type="text-area"/>
+                      <textarea rows="5" />
                   </form>
               </div>
           </section>
