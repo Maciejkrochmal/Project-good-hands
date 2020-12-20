@@ -13,16 +13,16 @@ function App() {
   return (
       <Router>
           <nav>
-              <div>
-                  <button>zaloguj</button>
-                  <button>zaloz konto</button>
+              <div className="nav-bar-buttons">
+                  <button className="nav-bar-buttons-btn">Zaloguj</button>
+                  <button className="nav-bar-buttons-btn">Zaloz konto</button>
               </div>
               <ul className="nav-list">
-                  <li>Start</li>
-                  <li>O co chodzi ?</li>
-                  <li>O nas</li>
-                  <li>Fundacje i Organizacje</li>
-                  <li>Kontakt</li>
+                  <li className="nav-list-item">Start</li>
+                  <li className="nav-list-item">O co chodzi ?</li>
+                  <li className="nav-list-item">O nas</li>
+                  <li className="nav-list-item">Fundacje i Organizacje</li>
+                  <li className="nav-list-item">Kontakt</li>
               </ul>
           </nav>
           <section className="home-banner">
@@ -30,10 +30,10 @@ function App() {
                   {/*<img src={homeHero} alt={""}/>*/}
               </div>
               <div className="banner-data">
-                  <h1 className="banner-slogan">Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
-                  <div>
-                      <button className="banner-buttons">Oddaj Rzeczy</button>
-                      <button className="banner-buttons">Zorganizuj Zbiorke</button>
+                  <h1 className="banner-slogan">Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
+                  <div  className="banner-buttons">
+                      <button className="banner-buttons-btn">Oddaj<br/> Rzeczy</button>
+                      <button className="banner-buttons-btn">Zorganizuj Zbiorke</button>
                   </div>
               </div>
           </section>
@@ -85,17 +85,17 @@ function App() {
           </section>
           <section className="home-foundations">
               <h1 className="home-foundations-title">Komu pomagamy?</h1>
-              <div>
-                  <button>Fundacjom</button>
-                  <button>Organizacjom pozarządowym</button>
-                  <button>Lokalnym zbiórkom</button>
+              <div className="home-foundations-organization">
+                  <button className="home-foundations-organization__btn">Fundacjom</button>
+                  <button className="home-foundations-organization__btn">Organizacjom pozarządowym</button>
+                  <button className="home-foundations-organization__btn">Lokalnym zbiórkom</button>
               </div>
               <h2 className="home-foundations-data">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</h2>
               <div className="home-foundations-list">
                   <ul>
                       <li className="home-foundations-item">
                           <div>
-                              <h3>Fundacja “Dbam o Zdrowie”</h3>
+                              <p className="home-foundations-item__detail">Fundacja “Dbam o Zdrowie”</p>
                               <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
                           </div>
                           <div>
@@ -104,7 +104,7 @@ function App() {
                       </li>
                       <li className="home-foundations-item">
                           <div>
-                              <h3>Fundacja “Dla dzieci”</h3>
+                              <p className="home-foundations-item__detail">Fundacja “Dla dzieci”</p>
                               <p>Fundacja “Dla dzieci”</p>
                           </div>
                           <div>
@@ -113,7 +113,7 @@ function App() {
                       </li>
                       <li className="home-foundations-item">
                           <div>
-                              <h3>Fundacja “Bez domu”</h3>
+                              <p className="home-foundations-item__detail">Fundacja “Bez domu”</p>
                               <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
                           </div>
                           <div>
@@ -138,7 +138,6 @@ function App() {
                               <h4>Wpisz swoje imię</h4>
                               <input type="text" placeholder="Krzysztof"/>
                           </div>
-
                           <div>
                             <h4>Wpisz swój email</h4>
                             <input type="email" placeholder="abc@xyz.pl"/>
