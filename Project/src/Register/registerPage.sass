@@ -1,0 +1,59 @@
+.register
+  height: 885px
+  display: flex
+  justify-content: center
+  align-items: center
+  .register-container
+    width: 1000px
+    margin-top: 90px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .register-title
+      width: 50%
+      @include font-opsR
+      text-align: center
+      height: 126px
+      position: relative
+      background-image: url("../assets/Decoration.svg")
+      background-repeat: no-repeat
+      background-position: 50% 65%
+      font-size: 40px
+    .register-data
+      @include font-opsSB
+      text-align: start
+      display: flex
+      flex-direction: column
+      justify-content: center
+      background: #F0F1F1
+      width: 385px
+      height: 330px
+      padding: 20px 40px 40px 40px
+      .register-input
+        background: #F0F1F1
+        margin: 5px
+        padding: 10px
+        border: transparent
+        border-bottom: 1px solid #707070
+        &::placeholder
+          color: gray
+          opacity: 0.5
+    .register-buttons
+      padding: 25px
+      width: 60%
+      display: flex
+      justify-content: space-between
+      .register-buttons-btn
+        text-decoration: none
+        color: black
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 117px
+        border: 0.75px solid transparent
+        height: 50px
+        &:nth-child(2)
+          border: 0.75px solid black
+        &:hover
+          border: 0.75px solid darkgrey

@@ -1,220 +1,27 @@
-$font-base: "Open Sans"
-$font-alt: "Merriweather"
+@import "fonts/fonts"
+@import "../Navigation/nav"
+@import "../Home/AboutUs/aboutUs"
+@import "../Home/Banner/banner"
+@import "../Home/ContactUs/contactUs"
+@import "../Home/FourSteps/fourSteps"
+@import "../Home/Fundations/fundations"
+@import "../Home/ThreeColumns/threecolumns"
+@import "../LoginPage/loginPage"
+@import "../Register/registerPage"
+@import "../FormPage/formPage"
+@import "../FormPage/StepOne/formStepOne"
+@import "../FormPage/StepTwo/formStepTwo"
+@import "../FormPage/StepThree/formStepThree"
+@import "../FormPage/StepFour/formFour"
+@import "../FormPage/FormSummary/formSummary"
+@import "../FormPage/formButtons"
 
-nav
-  display: flex
-  flex-direction: column
-  align-items: flex-end
-  padding: 20px
-  position: absolute
-  left: 47%
-  font-weight: 400
-  font-family: $font-base
-  .nav-bar-buttons-btn
-    font-size: 14px
-    width: 90px
-    color: #737373
-    height: 36px
-    margin-right: 20px
-    background: white
-    border: transparent
-    cursor: pointer
-    &:hover
-      border: solid 1px #FAD648
-  .nav-list
-    display: flex
-    list-style: none
-    padding: 10px
-    font-size: 18px
-    text-align: center
-    .nav-list-item
-      margin-left: 40px
-      padding: 20px
-      border: solid 1px transparent
-      cursor: pointer
-      &:hover
-        border: solid 1px black
-.home-banner
-  display: flex
-  font-family: $font-base
-  .banner-img
-    height: 885px
-    width: 50%
-    background: #00FA9A
-    background-size: cover
-    background-position-x: 85%
-    background-image: url("../assets/Home-Hero-Image.jpg")
-  .banner-data
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    padding: 20px
-    .banner-slogan
-      text-align: center
-      height: 156px
-      position: relative
-      background-image: url("../assets/Decoration.svg")
-      background-repeat: no-repeat
-      background-position: 50% 85%
-      font-size: 38px
-      font-weight: 400
-    .banner-buttons
-      display: flex
-      .banner-buttons-btn
-        cursor: pointer
-        text-align: center
-        font-weight: 200
-        background: white
-        border: 0.75px solid black
-        color: black
-        height: 120px
-        width: 310px
-        margin: 35px
-        font-size: 36px
-        font-weight: 200
-.home-three-columns
-  background: darkgoldenrod
-  width: 100%
-  background-image: url("../assets/Columns-Background.png")
-  height: 400px
-  display: inline-flex
-  align-items: center
-  justify-content: space-evenly
-  .three-columns
-    display: flex
-    flex-direction: column
-    align-items: center
-    width: 20%
-    h1
-      font-family: $font-base
-      font-size: 80px
-      font-weight: 200
-      margin: 0
-    h2
-      font-size: 18px
-    p
-      font-family: $font-alt
-      font-weight: 200
-      font-size: 16px
-      text-align: center
-.home-four-steps
-  display: flex
-  flex-direction: column
-  align-items: center
-  font-family: $font-alt
-  .home-four-steps-title
-    display: flex
-    align-items: center
-    height: 150px
-    padding: 20px
-    background-image: url("../assets/Decoration.svg")
-    background-repeat: no-repeat
-    background-position: 50% 85%
-    font-size: 38px
-  .four-steps-container
-    background: darkgrey
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 100%
-    height: 330px
-    .four-steps-container-content
-      text-align: center
-      width: 16%
-      h3
-        font-size: 18px
-      p
-        font-size: 16px
-  .home-four-steps-button
-    margin: 30px
-    height: 100px
-    width: 300px
-    font-size: 36px
-.home-about-us
-  display: flex
-  .about-us-content
-    display: flex
-    flex-direction: column
-    align-items: center
-    text-align: center
-    background: lightgray
-    .about-us-title
-      height: 200px
-      font-size: 38px
-    .about-us-data
-      width: 30%
-      font-size: 30px
-  .about-us-img
-    width: 50%
-    height: 900px
-    background-size: cover
-    background-image: url("../assets/People.jpg")
-.home-foundations
-  display: flex
-  flex-direction: column
-  align-items: center
-  .home-foundations-title
-    font-size: 52px
-    font-weight: 400
-  .home-foundations-organization
-    display: flex
-    font-size: 24px
-    font-weight: 400
-    .home-foundations-organization__btn
-      width: 209px
-      height: 76px
-  .home-foundations-data
-    max-width: 600px
-    text-align: center
-    font-size: 22px
-    font-weight: 400
-  .home-foundations-buttons
-    align-self: center
-  .home-foundations-list
-    display: flex
-    flex-direction: column
-    width: 70%
-    .home-foundations-item
-      display: flex
-      justify-content: space-between
-      border-bottom: solid
-      font-weight: 200
-      .home-foundations-item__detail
-        font-size: 26px
-      p
-        font-size: 18px
-      &.home-foundations-item:nth-child(3)
-        border-bottom: transparent
-        margin-bottom: 20px
-.home-contact-us
-  display: flex
-  height: 1000px
-  justify-content: flex-end
-  position: relative
-  text-align: center
-  font-size: 38px
-  font-weight: 400
-  .home-contact-us-img
-    width: 100%
-    position: absolute
-    top: 0%
-    bottom: 0
-    z-index: -1
-    background-size: cover
-    background-repeat: no-repeat
-    opacity: 0.2
-    background-image: url("../assets/Background-Contact-Form.jpg")
-  .contact-us-content
-    width: 40%
-    margin-right: 10%
-    .contact-form
-      font-size: 16px
-      display: flex
-      flex-wrap: wrap
-      flex-direction: column
-      .contact-form-data
-        display: flex
-        justify-content: space-between
-        text-align: start
+
+
+
+
+
+
+
+
 

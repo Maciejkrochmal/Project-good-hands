@@ -1,0 +1,63 @@
+.home-foundations
+  display: flex
+  flex-direction: column
+  align-items: center
+  @include font-opsR
+  .home-foundations-title
+    font-size: 52px
+    height: 130px
+    background-image: url("../../assets/Decoration.svg")
+    background-repeat: no-repeat
+    background-position: 50% 94%
+  .home-foundations-organization
+    display: flex
+    font-size: 24px
+    font-weight: 400
+    .home-foundations-organization__btn
+      margin-bottom: 50px
+      cursor: pointer
+      background: white
+      font-size: 24px
+      border: 0.75px solid transparent
+      width: 209px
+      height: 76px
+      &:active
+        border-radius: 0
+        border: 0.75px solid black
+  .home-foundations-data
+    max-width: 600px
+    text-align: center
+    font-size: 22px
+    @include font-opsR
+  .home-foundations-buttons
+    align-self: center
+  .home-foundations-list
+    display: flex
+    flex-direction: column
+    width: 70%
+    .home-foundations-item
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid black
+      font-weight: 200
+      .home-foundations-item__detail
+        font-size: 26px
+        @include font-mwl
+      p
+        font-size: 18px
+        @include font-mwl-italic
+      &.home-foundations-item:nth-child(3)
+        border-bottom: transparent
+        margin-bottom: 20px
+  .home-foundations-buttons
+    width: 25%
+    display: flex
+    justify-content: space-around
+    .home-foundations-btn
+      font-size: 18px
+      background: white
+      width: 40px
+      height: 50px
+      border: 1px solid transparent
+      &:active
+        border: 1px solid #707070

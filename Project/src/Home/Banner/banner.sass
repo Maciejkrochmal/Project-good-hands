@@ -1,0 +1,37 @@
+.home-banner
+  display: flex
+  .banner-img
+    height: 885px
+    width: 50%
+    background: #00FA9A
+    background-size: cover
+    background-position-x: 85%
+    background-image: url("../../assets/Home-Hero-Image.jpg")
+  .banner-data
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 20px
+    .banner-slogan
+      @include font-opsR
+      text-align: center
+      height: 156px
+      position: relative
+      background-image: url("../../assets/Decoration.svg")
+      background-repeat: no-repeat
+      background-position: 50% 85%
+      font-size: 38px
+    .banner-buttons
+      display: flex
+      .banner-buttons-btn
+        font-size: 36px
+        @include font-opsL
+        cursor: pointer
+        text-align: center
+        background: white
+        border: 0.75px solid black
+        color: black
+        height: 120px
+        width: 310px
+        margin: 35px

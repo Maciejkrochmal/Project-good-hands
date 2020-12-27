@@ -1,0 +1,72 @@
+.home-contact-us
+  display: flex
+  height: 1050px
+  justify-content: flex-end
+  position: relative
+  text-align: center
+  font-size: 38px
+  font-weight: 400
+  .home-contact-us-img
+    width: 100%
+    position: absolute
+    top: 0%
+    bottom: 0
+    z-index: -1
+    background-size: cover
+    background-repeat: no-repeat
+    opacity: 0.2
+    background-image: url("../../assets/Background-Contact-Form.jpg")
+  .contact-us-content
+    width: 26%
+    margin-right: 10%
+    .contact-form-data-title
+      font-size: 38px
+      height: 130px
+      @include font-opsR
+      background-image: url("../../assets/Decoration.svg")
+      background-repeat: no-repeat
+      background-position: 50% 94%
+    .contact-form
+      font-size: 16px
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      .contact-form-data
+        display: flex
+        justify-content: space-between
+        text-align: start
+        @include font-opsSB
+        .contact-form-input
+          width: 290px
+          margin: 5px
+          padding: 10px
+          border: transparent
+          border-bottom: 1px solid #707070
+          &::placeholder
+            color: gray
+            opacity: 0.5
+      .contact-form-msg
+        @include font-opsSB
+        text-align: start
+      .contact-form-text-area
+        border: transparent
+        border-bottom: 1px solid #707070
+        appearance: textfield
+        resize: none
+        &::placeholder
+          color: gray
+          opacity: 0.5
+  .home-contact-us-footer
+    display: flex
+    position: absolute
+    font-size: 18px
+    bottom: 0
+    left: 50%
+    align-items: center
+    .home-four-steps-footer-icon
+      height: 30px
+      width: 30px
+      margin: 20px
+      background-image: url("../../assets/Facebook.svg")
+      &:nth-child(3)
+        background-image: url("../../assets/Instagram.svg")
