@@ -11,7 +11,20 @@ import {ContactUs} from "../Home/ContactUs/ContactUs";
 
 export const FormPage = () =>{
     const { url, path } = useRouteMatch();
-    const [userForm, setUserForm] = useState(
+    const [userForm, setUserForm] = useState({
+        items: [null,null,null,null,null],
+        bags: 0,
+        location: 0,
+        who: [null,null,null,null,null],
+        organization: '',
+        street:'',
+        city: '',
+        code: '',
+        telephone: '',
+        date: '',
+        time: '',
+        comments: '',
+        }
 
     )
 
@@ -22,19 +35,19 @@ export const FormPage = () =>{
         <Router>
             <Switch>
                 <Route path={`${path}/one`}>
-                    <FormStepOne/>
+                    <FormStepOne props={{userForm, setUserForm}}/>
                 </Route>
                 <Route  path={`${path}/two`}>
-                    <FormStepTwo/>
+                    <FormStepTwo props={{userForm, setUserForm}}/>
                 </Route>
                 <Route  path={`${path}/three`}>
-                    <FormStepThree/>
+                    <FormStepThree props={{userForm, setUserForm}}/>
                 </Route>
                 <Route path={`${path}/four`}>
-                    <FormFour/>
+                    <FormFour props={{userForm, setUserForm}}/>
                 </Route>
                 <Route path={`${path}/summary`}>
-                    <FormSummary/>
+                    <FormSummary props={{userForm, setUserForm}}/>
                 </Route>
             </Switch>
             <ContactUs/>

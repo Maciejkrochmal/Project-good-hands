@@ -1,48 +1,50 @@
 import {Link} from "react-router-dom";
 
-export const FormSummary = () =>{
+export const FormSummary = ({props}) =>{
+    const {userForm, setUserForm} = props
+
 
     return(
         <section className="form-summary">
             <p className="form-summary-title">Podsumowanie Twojej darowizny</p>
             <div className="form-summary-sum">
                 <p>Oddajesz:</p>
-                <span className="form-summary-sum-info">4 worki, ubrania w dobrym stanie, dzieciom</span>
-                <span className="form-summary-sum-info">dla lokalizacji: Warszawa</span>
+                <span className="form-summary-sum-info">{userForm.bags} worki, {userForm.items.join(' ')}, {userForm.who.join(' ')}</span>
+                <span className="form-summary-sum-info">dla lokalizacji: {userForm.location}</span>
             </div>
             <div className="form-summary-data">
                 <div className="form-summary-data-container">
                     <p>Adres odbioru:</p>
                     <div className="form-summary-data-container-info">
                         <p>Ulica</p>
-                        <p>Prosta 51</p>
+                        <p>{userForm.street}</p>
                     </div>
                     <div className="form-summary-data-container-info">
                         <p>Miasto</p>
-                        <p>Prosta 51</p>
+                        <p>{userForm.city}</p>
                     </div>
                     <div className="form-summary-data-container-info">
                         <p>Kod<br/> pocztowy</p>
-                        <p>90-209</p>
+                        <p>{userForm.code}</p>
                     </div>
                     <div className="form-summary-data-container-info">
                         <p>Numer <br/>telefonu</p>
-                        <p>473 839 483</p>
+                        <p>{userForm.telephone}</p>
                     </div>
                 </div>
                 <div className="form-summary-data-container">
                     <p>Termin odbioru:</p>
                     <div className="form-summary-data-container-info">
                         <p>Data</p>
-                        <p>17.10.2019</p>
+                        <p>{userForm.date}</p>
                     </div>
                     <div className="form-summary-data-container-info">
                         <p>Godzina</p>
-                        <p>17:30</p>
+                        <p>{userForm.time}</p>
                     </div>
                     <div className="form-summary-data-container-info">
                         <p>Uwagi <br/>dla kuriera</p>
-                        <p>lorem20</p>
+                        <p>{userForm.comments}</p>
                     </div>
                 </div>
             </div>
