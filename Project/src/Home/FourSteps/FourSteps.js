@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 export const FourSteps = () =>{
     return(
         <section className="home-four-steps" id="four-steps">
@@ -24,7 +26,7 @@ export const FourSteps = () =>{
                     <p>kurier przyjedzie w dogodnym terminie</p>
                 </div>
             </div>
-            <button className='home-four-steps-button'>ODDAJ RZECZY</button>
+            <NavLink to={"/form/one"} className='home-four-steps-button'>ODDAJ RZECZY</NavLink>
         </section>
     )
 }
